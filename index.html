@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> - 武生院 我们爱您 -</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/main.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+</head>
+<body>
+	<div id="mainDiv">
+	  <div id="content">
+			<div id="code">
+				<span class="comments">送给我们最爱的武生院：</span><br />
+				<span class="space"><span class="comments">这个小小的网页送给我们最爱的您。</span></span><br />
+				<span class="space"/><span class="comments">生院，哈哈，我们都很庆幸当初选了您，然后千里迢迢来这里邂逅上了您，是我们这辈子最幸福的一件事情，因为在这里您给了我们无数美好的回忆，也是未来的我们幸福的回味。生院，您是我们心中的一座灯塔，您是同学间友谊的桥梁，您是年轻学子们一展才华的舞台。生院您就像我们的母亲一样，从懵懂的那个小孩到现在成熟的我们，您是保存我们最美回忆的家。我在这里成长，有老师的教导、同学的关怀；失败的磨练；成功的鼓励。生院，我们无法忘记您，希望能在这个小小的网页表达我们四个深深的怀念之情，您一直锁在我心底最深的那个抽屉里，钥匙就是我们的心，丢失不了。我们快毕业了，可是，就算经历一千年、一万年时间的隔阂，我们还是忘不了您。生院，谢谢您，谢谢您让我们懂得做人，让我们明白人生哲理！谢谢您！</span><br />
+				<span class="space"/><br />
+				<span class="space"/><span class="comments">生院，让我们在剩下的不到几个月时间好好的拥抱您吧~~生院，我们爱您！！！(≧▽≦)/~啦啦啦╮，爱您永远！</span><br />
+				<span class="space"/><span class="comments">2016.06.12华灯之下。</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						生院，这是我们在您幸福的怀抱里的第：
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						我们是最爱您的丶也是最关心您的。<br/>
+						<div class="signature">生院、生院，爱您一生！！！</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+		<div id="copyright">
+            送给我们最爱的武生院
+			We LOVE YOU~<br />
+			    Wuhan Bioengineering Institute
+	  </div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2013,9,1);
+		together.setHours(0);
+		together.setMinutes(60);
+		together.setSeconds(10);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+	
+
+
+
+
+<div style="width:960px;margin:20px auto; clear:both; text-align:center; font-size:12px; line-height:25px;">
+武汉生物工程学院2013届计科一班刘畅、张颖、谭云娃、吴梓锋共同编辑，喜欢我们的小作品可以QQ找我们3591904。
+</div>
+
+
+<div style=" width:950px; margin:30px auto 10px">
+<script type="text/javascript" src="#"></script>
+</div>
+
+</body>
+</html>
+
